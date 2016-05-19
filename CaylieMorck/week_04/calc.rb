@@ -38,6 +38,7 @@ def subtraction
 
   result = first_number - second_number
   puts "The result is #{result}"
+end
 
 def division
   print "What's your numerator? "

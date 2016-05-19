@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  background: pink
+}
+
+nav {
+  height: 80px;
+  background: white;
+}
+
+a {
+  color: black;
+}
