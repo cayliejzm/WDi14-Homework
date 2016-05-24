@@ -1,0 +1,24 @@
+<h3>Here's one of your favourite dogs!</h3>
+
+<h4>
+  <%=@dog["name"]%>
+  <%=@dog["breed"]%>
+</h4>
+
+<img src="<%=@dog["image"]%>">
+
+<p>
+  <% @dog["description"]%>
+</p>
+
+<a href="/dogs/<%=@dog["id"]%>/delete">
+Delete this dog, if you must.
+</a>
+
+<a href="/dog/<%=@dog["id"]%>/edit">
+  Change this dog, if you must.
+</a>
+
+<a href="/dog">
+  Let's see all of the dogs!
+</a>

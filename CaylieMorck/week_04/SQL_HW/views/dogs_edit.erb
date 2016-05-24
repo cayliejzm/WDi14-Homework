@@ -1,0 +1,25 @@
+<h3>
+  Here we can edit your dog.
+</h3>
+
+<form method="POST" action="/dogs/<%= @dog["id"]%>">
+<p>
+  <label> Name: </label>
+  <input type="text" name="name" value="<%=@dog["name"]%>">
+</p>
+
+  <p>
+    <label> Breed: </label>
+    <input type="text" name="breed" value="<%= @dog["breed"] %>">
+  </p>
+  <p>
+    <label> Image: </label>
+    <input type="text" name="image" value="<%= @dog["image"] %>">
+  </p>
+  <p>
+    <label>Description: </label>
+    <input type="text" name="description" value="<%= @dog["description"] %>">
+  </p>
+
+<input type="submit" value="update this value">
+</form>

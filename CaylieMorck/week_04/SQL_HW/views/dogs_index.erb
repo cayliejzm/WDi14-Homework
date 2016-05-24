@@ -1,0 +1,18 @@
+<h3>Here's a list of all your favourite dogs!</h3>
+
+<% @all_dogs.reverse_each do |dog| %>
+<h5>
+  <%= dog["name"]%>
+  <%= dog["breed"] %>
+</h5>
+<p>
+  <a href="/dogs<%=dog["id"]%>">
+  <img src="<%= dog["image"]%>">
+</p>
+
+<p>
+  <%= animal["description"] %>
+</p>
+
+<hr>
+<% end %>

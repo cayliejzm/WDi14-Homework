@@ -1,0 +1,14 @@
+@font-face {
+  url: ("https://www.behance.net/gallery/14209843/SIMPLIFICA-Typeface-Free")
+}
+
+body {
+  font-family: "simplifica", sans-serif;;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;3
+  margin: 0 auto;
+
+}
