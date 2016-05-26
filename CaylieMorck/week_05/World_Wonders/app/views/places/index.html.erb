@@ -1,0 +1,16 @@
+<h2>Your Places</h2>
+
+
+<ul>
+  <% @places.each do |place| %>
+
+    <%=image_tag place.image, :class => 'thumbnail' %>
+  <ul>
+    <li>Name: <%= link_to place.name, "/places/#{place.id}" %></li>
+    <li>Nationality: <%= place.nationality %> </li>
+    <li>Year Founded: <%=place.dob %></li>
+    <li>Climate: <%= place.climate %></li>
+  </ul>
+<hr>
+  <% end %>
+</ul>

@@ -1,0 +1,23 @@
+<h1><%= @place.name %></h1>
+
+<%= image_tag @place.image, :class=> 'feature' %>
+
+<ul>
+  <li>Nationality: <b> <%= @place.nationality %> </b></li>
+  <li>Year Founded: <b> <%= @place.dob %> </b></li>
+  <li>Climate: <b> <%= @place.climate %></b></li>
+</ul>
+
+<hr>
+
+<h4>Wonders:</h4>
+
+<% @place.wonders.each do |wonder| %>
+<%=link_to(image_tag(wonder.image, :class => 'thumbnail'), wonder ) %>
+<% end %>
+
+<div>
+  <%= link_to "Edit", "/places/#{@place.id}/edit" %>
+
+  <%= link_to "Delete", "/places/#{@place.id}/delete", :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>

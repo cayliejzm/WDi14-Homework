@@ -1,0 +1,29 @@
+<h1>Where do you want to go?</h1>
+
+<%= form_for @place do |f| %>
+
+<p>
+  <%= f.label :name, "Country" %>
+  <%= f.text_field :name, :required => true %>
+</p>
+<p>
+  <%= f.label :nationality %>
+  <%= f.text_field :nationality, :required => true %>
+</p>
+<p>
+  <%= f.label :dob, "Year Founded" %>
+  <%= f.text_field :dob, :required => true %>
+</p>
+<p>
+  <%= f.label :climate %>
+  <%= f.text_field :climate, :required => true %>
+</p>
+<p>
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true %>
+</p>
+
+
+<%= f.submit %>
+
+<% end %>

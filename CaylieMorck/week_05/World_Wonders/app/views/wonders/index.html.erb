@@ -1,0 +1,8 @@
+<h2>All Wonders</h2>
+
+<% @wonders.each do |wonder| %>
+  <!-- <%= link_to( image_tag( wonder.image, :class => 'thumbnail'), "/wonders/#{wonder.id}") %>
+  <%= link_to( image_tag( wonder.image, :class => 'thumbnail'), wonder_path(wonder.id) ) %>
+  <%= link_to( image_tag( wonder.image, :class => 'thumbnail'), wonder_path(wonder) ) %> -->
+  <%= link_to( image_tag( wonder.image, :class => 'thumbnail'), wonder ) %>
+<% end %>

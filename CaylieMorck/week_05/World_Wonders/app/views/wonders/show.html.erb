@@ -1,0 +1,15 @@
+<h2><%= @wonder.title%></h2>
+
+<%= image_tag( @wonder.image, :class => 'feature' ) %>
+
+<% if @wonder.place %>
+<p>Place: <%= link_to(@wonder.place.name, @wonder.place) %></p>
+<% end %>
+
+<p>Year Discovered: <%= @wonder.year_discovered %></p>
+
+
+<div class="controls">
+  <%= link_to "Edit Wonder", edit_wonder_path( @wonder) %>
+  <%= link_to "Delete Wonder", @wonder, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

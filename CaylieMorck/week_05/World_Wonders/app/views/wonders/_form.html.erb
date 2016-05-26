@@ -1,0 +1,24 @@
+
+
+<%= form_for @wonder do |f| %>
+<p>
+  <%= f.label :title %>
+  <%=f.text_field :title, :required => true %>
+</p>
+<p>
+  <%= f.label :year_discovered %>
+  <%=f.text_field :year_discovered, :required => true %>
+</p>
+
+<p>
+  <%= f.label :image %>
+  <%=f.url_field :image, :required => true %>
+</p>
+
+<p>
+  <%= f.label :place_id %>
+  <%= f.select :place_id, Place.all.map { |a| [ a.name, a.id ]}, :include_blank => true %>
+</p>
+
+<%= f.submit %>
+<% end %>
