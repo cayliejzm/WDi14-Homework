@@ -28,15 +28,16 @@ var initMap = function ( data ) {
       lat: issLatitude,
       lng: issLongitude
     },
-   });
+  });
 
 
-   var marker = new google.maps.Marker({
-     position: {
-       lat: issLatitude,
-       lng: issLongitude
-     },
-     map: map,
-     title: "SPACE STATION"
-   });
+var marker = new google.maps.Marker({
+  position: {
+    // getCurrentLocation();
+    lat: issLatitude,
+    lng: issLongitude
+   },
+    map: map,
+    title: "SPACE STATION"
+ });
 };

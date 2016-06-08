@@ -27,10 +27,3 @@ var getAstro = function () {
 $(document).ready(function () {
   getAstro();
 });
-
-
-
-// var astros = data.people
-// for( var i=0; i > data.people.length; i += ) {
-//   var currentAstro = astro[i]
-// }
