@@ -1,4 +1,3 @@
-
 var gameboard = [ ["", "", ""], [ "", "", ""], ["", "", ""] ];
 
 var scoreX = parseInt(sessionStorage.scoreX) || 0;
