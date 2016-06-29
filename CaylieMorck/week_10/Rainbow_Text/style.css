@@ -1,0 +1,32 @@
+@font-face {
+   url: ('https://fonts.googleapis.com/css?family=Raleway')
+ }
+ html {
+  background: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c2447a69043e39f174216c5440f0fb2d") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ body {
+    font-family: "railway", sans-serif;
+    text-align: center;
+    padding-top: 100px;
+ }
+
+ h1 {
+   color: white;
+   letter-spacing: 2px;
+ }
+
+p {
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.rainbow {
+  font-size: 100px;
+  font-weight: bolder;
+}
